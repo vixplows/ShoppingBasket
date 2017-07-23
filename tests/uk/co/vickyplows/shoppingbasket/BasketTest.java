@@ -90,4 +90,16 @@ public class BasketTest {
         assertEquals(0, countItemList);
     }
 
+    @Test
+    public void testCanGetItemPrice() {
+        double itemPrice = basket.getItemPrice(milk);
+        assertEquals( 1.55, itemPrice, 0.01);
+    }
+
+//    @Test
+//    public void testCanAddItemAndUpdateTotalValue() {
+//        double currentValue = basket.addItemAndUpdateCurrentValue(milk);
+//        assertEquals(1.55, currentValue);
+//    }
+
 }

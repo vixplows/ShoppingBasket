@@ -34,4 +34,13 @@ public class Basket {
     public void emptyAllItems() {
         itemList.clear();
     }
+
+    public double getItemPrice(Items item) {
+        return item.getPrice();
+    }
+
+//    public double addItemAndUpdateCurrentValue(Items item) {
+//        itemList.add(item);
+//
+//    }
 }
