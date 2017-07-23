@@ -12,11 +12,13 @@ public class BasketTest {
     Basket basket;
     Customer customer;
     Milk milk;
+    Bread bread;
 
     @Before
     public void setUp() throws Exception {
         customer = new Customer("Louise", true);
         milk = new Milk("a001", "Milk", 1.55, false);
+        bread = new Bread ("a002", "Bread", 1.00, true);
         basket = new Basket(customer);
     }
 
@@ -35,8 +37,12 @@ public class BasketTest {
     }
 
     @Test
-    public void testCanRemoveItem() {
-        
+    public void testCanAddMutlipleItems() {
+        ArrayList<Items> itemList = new ArrayList<Items>();
+        basket.addItemToList(milk);
+        basket.addItemToList(bread);
+        int countItemList = basket.countItemsInItemList();
+        assertEquals(2, countItemList);
     }
 
 }
