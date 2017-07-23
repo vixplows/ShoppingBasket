@@ -40,5 +40,10 @@ public class MilkTest {
         assertEquals( "LactoseFreeMilk", name);
     }
 
+    @Test public void testGetPrice() {
+        double price = milk.getPrice();
+        assertEquals( 1.55, price, 0.01);
+    }
+
 
 }
