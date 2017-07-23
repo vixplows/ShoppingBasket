@@ -34,5 +34,11 @@ public class MilkTest {
         assertEquals( "Milk", name);
     }
 
+    @Test public void testSetName() {
+        milk.setName("LactoseFreeMilk");
+        String name = milk.getName();
+        assertEquals( "LactoseFreeMilk", name);
+    }
+
 
 }
