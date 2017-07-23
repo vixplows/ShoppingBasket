@@ -40,7 +40,19 @@ public class BasketTest {
     public void testCanAddMutlipleItems() {
         ArrayList<Items> itemList = new ArrayList<Items>();
         basket.addItemToList(milk);
+        basket.addItemToList(milk);
         basket.addItemToList(bread);
+        int countItemList = basket.countItemsInItemList();
+        assertEquals(3, countItemList);
+    }
+
+    @Test
+    public void testCanRemoveItem() {
+        ArrayList<Items> itemList = new ArrayList<Items>();
+        basket.addItemToList(milk);
+        basket.addItemToList(milk);
+        basket.addItemToList(bread);
+        basket.removeItemFromList(milk);
         int countItemList = basket.countItemsInItemList();
         assertEquals(2, countItemList);
     }

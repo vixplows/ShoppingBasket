@@ -19,4 +19,8 @@ public class Basket {
     public void addItemToList(Items item) {
         itemList.add(item);
     }
+
+    public void removeItemFromList(Items item) {
+        itemList.remove(item);
+    }
 }
