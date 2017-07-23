@@ -84,4 +84,17 @@ public class Basket {
         return totalBogofDiscount;
     }
 
+    public double getTwentyPlusDiscount() {
+        double twentyPlusDiscount = 0;
+
+        currentValue = currentValue - this.getBogofDiscount();
+
+        if (currentValue > 20.00) {
+            twentyPlusDiscount = currentValue * 0.1;
+        } else {
+            twentyPlusDiscount = 0;
+        }
+
+        return twentyPlusDiscount;
+    }
 }

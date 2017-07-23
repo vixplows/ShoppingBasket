@@ -148,5 +148,24 @@ public class BasketTest {
         assertEquals( 1.00, totalBogofDiscount, 0.01);
     }
 
+    @Test
+    public void testGetTwentyPlusDiscount() {
+        bread = new Bread ("a002", "Bread", 12.00, true);
+        basket.addItemToList(bread);
+        basket.addItemToList(bread);
+        basket.addItemToList(bread);
+        double twentyPlusDiscount = basket.getTwentyPlusDiscount();
+        assertEquals(2.40, twentyPlusDiscount, 0.01);
+    }
+
+    @Test
+    public void testNoTwentyPlusDiscount() {
+        basket.addItemToList(bread);
+        basket.addItemToList(bread);
+        basket.addItemToList(bread);
+        double twentyPlusDiscount = basket.getTwentyPlusDiscount();
+        assertEquals( 0, twentyPlusDiscount, 0.01);
+    }
+
 
 }
