@@ -14,4 +14,7 @@ public abstract class Items {
         this.bogofDiscount = bogofDiscount;
     }
 
+    public String getProductCode() {
+        return productCode;
+    }
 }
