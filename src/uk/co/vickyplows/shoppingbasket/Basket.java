@@ -38,9 +38,8 @@ public class Basket {
     public double getItemPrice(Items item) {
         return item.getPrice();
     }
-
-//    public double addItemAndUpdateCurrentValue(Items item) {
-//        itemList.add(item);
+//
+//    public double calculateBeforeDiscountValue() {
 //
 //    }
 }

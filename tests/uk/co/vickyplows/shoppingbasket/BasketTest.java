@@ -52,7 +52,6 @@ public class BasketTest {
 
     @Test
     public void testCanAddItem() {
-        ArrayList<Items> itemList = new ArrayList<Items>();
         basket.addItemToList(milk);
         int countItemList = basket.countItemsInItemList();
         assertEquals(1, countItemList);
@@ -60,7 +59,6 @@ public class BasketTest {
 
     @Test
     public void testCanAddMutlipleItems() {
-        ArrayList<Items> itemList = new ArrayList<Items>();
         basket.addItemToList(milk);
         basket.addItemToList(milk);
         basket.addItemToList(bread);
@@ -70,7 +68,6 @@ public class BasketTest {
 
     @Test
     public void testCanRemoveItem() {
-        ArrayList<Items> itemList = new ArrayList<Items>();
         basket.addItemToList(milk);
         basket.addItemToList(milk);
         basket.addItemToList(bread);
@@ -81,7 +78,6 @@ public class BasketTest {
 
     @Test
     public void testCanRemoveAllItems() {
-        ArrayList<Items> itemList = new ArrayList<Items>();
         basket.addItemToList(milk);
         basket.addItemToList(milk);
         basket.addItemToList(bread);
@@ -97,9 +93,17 @@ public class BasketTest {
     }
 
 //    @Test
+//    public void testCanCalculateBeforeDiscountValue() {
+//        basket.addItemToList(milk);
+//        basket.addItemToList(bread);
+//        double totalValue =
+//        assertEquals(2.55, totalValue, 0.01);
+//    }
+
+//    @Test
 //    public void testCanAddItemAndUpdateTotalValue() {
 //        double currentValue = basket.addItemAndUpdateCurrentValue(milk);
-//        assertEquals(1.55, currentValue);
+//        assertEquals(1.55, currentValue, 0.01);
 //    }
 
 }
