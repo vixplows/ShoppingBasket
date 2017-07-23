@@ -53,4 +53,17 @@ public class BreadTest {
         assertEquals(2.00, price, 0.01);
     }
 
+    @Test
+    public void testHasBogofDiscount() {
+        boolean bogofDiscount = bread.getBogofDiscount();
+        assertEquals(true, bogofDiscount);
+    }
+
+    @Test
+    public void testSetBogofDiscountToFalse() {
+        bread.setBogofDiscount(false);
+        boolean bogofDiscount = bread.getBogofDiscount();
+        assertEquals(false, bogofDiscount);
+    }
+
 }
