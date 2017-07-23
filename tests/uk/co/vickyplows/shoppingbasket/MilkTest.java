@@ -54,5 +54,16 @@ public class MilkTest {
         assertEquals(1.90, price, 0.01);
     }
 
+    @Test
+    public void testNoBogofDiscount() {
+        boolean bogofDiscount = milk.getBogofDiscount();
+        assertEquals(false, bogofDiscount);
+    }
 
+    @Test
+    public void testHasBogofDiscount() {
+        milk.setBogofDiscount(true);
+        boolean bogofDiscount = milk.getBogofDiscount();
+        assertEquals(true, bogofDiscount);
+    }
 }

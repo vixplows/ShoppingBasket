@@ -37,4 +37,12 @@ public abstract class Items {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public boolean getBogofDiscount() {
+        return bogofDiscount;
+    }
+
+    public void setBogofDiscount(boolean bogofDiscount) {
+        this.bogofDiscount = bogofDiscount;
+    }
 }
