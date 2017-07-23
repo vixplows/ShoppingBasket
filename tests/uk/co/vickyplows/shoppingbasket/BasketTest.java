@@ -10,22 +10,38 @@ import static org.junit.Assert.*;
 public class BasketTest {
 
     Basket basket;
+    Basket basket2;
     Customer customer;
+    Customer customer1;
     Milk milk;
     Bread bread;
 
     @Before
     public void setUp() throws Exception {
         customer = new Customer("Louise", true);
+        customer1 = new Customer("Fabio", false);
         milk = new Milk("a001", "Milk", 1.55, false);
         bread = new Bread ("a002", "Bread", 1.00, true);
         basket = new Basket(customer);
+        basket2 = new Basket(customer1);
     }
 
     @Test
     public void testGetCustomerName() {
         String name = basket.getCustomerName();
         assertEquals("Louise", name);
+    }
+
+    @Test
+    public void testCustomerHasLoyaltyCard() {
+        boolean loyaltyCard = basket.getCustomerLoyaltyCard();
+        assertEquals(true, loyaltyCard);
+    }
+
+    @Test
+    public void testNoCustomerLoyaltyCard() {
+        boolean loyaltyCard = basket2.getCustomerLoyaltyCard();
+        assertEquals(false, loyaltyCard);
     }
 
     @Test

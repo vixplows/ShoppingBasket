@@ -27,4 +27,8 @@ public class Basket {
     public String getCustomerName() {
         return this.customer.getName();
     }
+
+    public boolean getCustomerLoyaltyCard() {
+        return this.customer.getLoyaltyCard();
+    }
 }
