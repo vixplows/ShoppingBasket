@@ -87,6 +87,12 @@ public class BasketTest {
     }
 
     @Test
+    public void testCurrentValueStartsAtZero() {
+        double currentValue = basket.getCurrentValue();
+        assertEquals( 0, currentValue, 0.01);
+    }
+
+    @Test
     public void testCanGetItemPrice() {
         double itemPrice = basket.getItemPrice(milk);
         assertEquals( 1.55, itemPrice, 0.01);
@@ -115,14 +121,14 @@ public class BasketTest {
         boolean bogof = basket.checkItemBogof(milk);
         assertEquals(false, bogof);
     }
-
+//
 //    @Test
 //    public void testCanApplyBogofDiscount() {
 //        basket.addItemToList(bread);
 //        basket.addItemToList(bread);
-//        double totalValueBogof = basket.sumItemPricesApplyBogof();
+//        double totalValueBogof = basket.sumItemPricesAndApplyBogof();
 //        assertEquals( 1.00, totalValueBogof, 0.01);
 //    }
-
+//
 
 }

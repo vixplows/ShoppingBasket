@@ -1,14 +1,17 @@
 package uk.co.vickyplows.shoppingbasket;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Basket {
 
     private ArrayList<Items> itemList = new ArrayList<Items>();
     private Customer customer;
+    private double currentValue;
 
     public Basket(Customer customer) {
         this.customer = customer;
+        this.currentValue = 0;
     }
 
     public String getCustomerName() {
@@ -35,6 +38,10 @@ public class Basket {
         itemList.clear();
     }
 
+    public double getCurrentValue() {
+        return currentValue;
+    }
+
     public double getItemPrice(Items item) {
         return item.getPrice();
     }
@@ -51,7 +58,16 @@ public class Basket {
         return item.getBogofDiscount();
     }
 
-//    public double sumItemPricesApplyBogof() {
+//    public double sumItemPricesAndApplyBogof() {
+//        HashMap<String, Integer> counterHashMap = new HashMap<String, Integer>();
 //
-//    }
+//        for (Items item : itemList) {
+//            if (!counterHashMap.containsKey(item.getName())) {
+//                counterHashMap.put(item.getName(), 1);
+//            } else
+//                counterHashMap.put(item.getName(), counterHashMap.get(item.getName()) + 1);
+//            }
+//        }
+//
+//
 }
