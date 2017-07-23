@@ -26,25 +26,23 @@ public class Basket {
         return itemList.size();
     }
 
-    public void addItemToList(Items item) {
-        itemList.add(item);
-    }
-
-    public void removeItemFromList(Items item) {
-        itemList.remove(item);
-    }
-
-    public void emptyAllItems() {
-        itemList.clear();
-    }
-
     public double getCurrentValue() {
         return currentValue;
     }
 
-    public void addItemAndUpdateCurrentValue(Items item) {
+    public void addItemToList(Items item) {
         itemList.add(item);
         currentValue += item.getPrice();
+    }
+
+    public void removeItemFromList(Items item) {
+        itemList.remove(item);
+        currentValue -= item.getPrice();
+    }
+
+    public void emptyAllItems() {
+        itemList.clear();
+        currentValue = 0;
     }
 
     public double getItemPrice(Items item) {

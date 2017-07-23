@@ -51,6 +51,12 @@ public class BasketTest {
     }
 
     @Test
+    public void testCurrentValueStartsAtZero() {
+        double currentValue = basket.getCurrentValue();
+        assertEquals( 0, currentValue, 0.01);
+    }
+
+    @Test
     public void testCanAddItem() {
         basket.addItemToList(milk);
         int countItemList = basket.countItemsInItemList();
@@ -58,12 +64,10 @@ public class BasketTest {
     }
 
     @Test
-    public void testCanAddMutlipleItems() {
-        basket.addItemToList(milk);
-        basket.addItemToList(milk);
+    public void testUpdatesCurrentValueWhenAddItem() {
         basket.addItemToList(bread);
-        int countItemList = basket.countItemsInItemList();
-        assertEquals(3, countItemList);
+        double currentValue = basket.getCurrentValue();
+        assertEquals(1.00, currentValue, 0.01);
     }
 
     @Test
@@ -77,6 +81,15 @@ public class BasketTest {
     }
 
     @Test
+    public void testUpdatesCurrentValueWhenRemoveItem() {
+        basket.addItemToList(milk);
+        basket.addItemToList(bread);
+        basket.removeItemFromList(bread);
+        double currentValue = basket.getCurrentValue();
+        assertEquals(1.55, currentValue, 0.01);
+    }
+
+    @Test
     public void testCanRemoveAllItems() {
         basket.addItemToList(milk);
         basket.addItemToList(milk);
@@ -87,9 +100,13 @@ public class BasketTest {
     }
 
     @Test
-    public void testCurrentValueStartsAtZero() {
+    public void testCurrentValueSetToZeroWhenBasketEmptied() {
+        basket.addItemToList(milk);
+        basket.addItemToList(milk);
+        basket.addItemToList(bread);
+        basket.emptyAllItems();
         double currentValue = basket.getCurrentValue();
-        assertEquals( 0, currentValue, 0.01);
+        assertEquals(0, currentValue, 0.01);
     }
 
     @Test
@@ -120,13 +137,6 @@ public class BasketTest {
         basket.addItemToList(bread);
         boolean bogof = basket.checkItemBogof(milk);
         assertEquals(false, bogof);
-    }
-
-    @Test
-    public void testCanAddItemAndUpdateCurrentValue() {
-        basket.addItemAndUpdateCurrentValue(bread);
-        double currentValue = basket.getCurrentValue();
-        assertEquals(1.00, currentValue, 0.01);
     }
 
     @Test
