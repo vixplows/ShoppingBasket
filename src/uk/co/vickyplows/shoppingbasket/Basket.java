@@ -42,6 +42,11 @@ public class Basket {
         return currentValue;
     }
 
+    public void addItemAndUpdateCurrentValue(Items item) {
+        itemList.add(item);
+        currentValue += item.getPrice();
+    }
+
     public double getItemPrice(Items item) {
         return item.getPrice();
     }
@@ -68,6 +73,6 @@ public class Basket {
 //                counterHashMap.put(item.getName(), counterHashMap.get(item.getName()) + 1);
 //            }
 //        }
-//
-//
+
+
 }

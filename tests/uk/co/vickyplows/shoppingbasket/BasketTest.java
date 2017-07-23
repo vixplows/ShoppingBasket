@@ -121,6 +121,13 @@ public class BasketTest {
         boolean bogof = basket.checkItemBogof(milk);
         assertEquals(false, bogof);
     }
+
+    @Test
+    public void testCanAddItemAndUpdateCurrentValue() {
+        basket.addItemAndUpdateCurrentValue(bread);
+        double currentValue = basket.getCurrentValue();
+        assertEquals(1.00, currentValue, 0.01);
+    }
 //
 //    @Test
 //    public void testCanApplyBogofDiscount() {
