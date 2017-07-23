@@ -54,8 +54,8 @@
       <file leaf-file-name="BreadTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BreadTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+            <state relative-caret-position="441">
+              <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -458,14 +458,14 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="BreadTest - 2017.07.23 at 20h 10m 50s.xml">
+      <configuration name="BreadTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="BreadTest_testGetProduceCode - 2017.07.23 at 20h 07m 27s.xml">
       <configuration name="BreadTest.testGetProduceCode" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BreadTest_testSetProductCode - 2017.07.23 at 20h 09m 03s.xml">
       <configuration name="BreadTest.testSetProductCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerTest - 2017.07.23 at 19h 09m 29s.xml">
-      <configuration name="CustomerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MilkTest - 2017.07.23 at 19h 47m 50s.xml">
       <configuration name="MilkTest" configurationId="JUnit" />
@@ -659,8 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BreadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        <state relative-caret-position="441">
+          <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
           <folding />
         </state>
       </provider>

@@ -40,5 +40,17 @@ public class BreadTest {
         assertEquals("SourDough", name);
     }
 
+    @Test
+    public void testGetPrice() {
+        double price = bread.getPrice();
+        assertEquals(1.00, price, 0.01);
+    }
+
+    @Test
+    public void testSetPrice() {
+        bread.setPrice(2.00);
+        double price = bread.getPrice();
+        assertEquals(2.00, price, 0.01);
+    }
 
 }
