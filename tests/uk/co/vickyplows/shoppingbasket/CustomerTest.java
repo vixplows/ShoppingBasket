@@ -22,4 +22,12 @@ public class CustomerTest {
         assertEquals("Louise", name);
     }
 
+    @Test
+    public void testSetName() {
+        customer.setName("Raina");
+        String name = customer.getName();
+        assertEquals( "Raina", name);
+    }
+
+
 }
