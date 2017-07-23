@@ -28,5 +28,11 @@ public class MilkTest {
         assertEquals( "b001", productCode);
     }
 
+    @Test
+    public void testGetName() {
+        String name = milk.getName();
+        assertEquals( "Milk", name);
+    }
+
 
 }
