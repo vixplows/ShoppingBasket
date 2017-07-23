@@ -17,4 +17,8 @@ public abstract class Items {
     public String getProductCode() {
         return productCode;
     }
+
+    public void setProductCode(String productCode) {
+        this.productCode = productCode;
+    }
 }
