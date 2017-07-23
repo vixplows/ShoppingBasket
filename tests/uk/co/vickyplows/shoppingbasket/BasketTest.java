@@ -33,13 +33,13 @@ public class BasketTest {
     }
 
     @Test
-    public void testCustomerHasLoyaltyCard() {
+    public void testCanCheckCustomerHasLoyaltyCard() {
         boolean loyaltyCard = basket.getCustomerLoyaltyCard();
         assertEquals(true, loyaltyCard);
     }
 
     @Test
-    public void testNoCustomerLoyaltyCard() {
+    public void testsCheckCustomerNoLoyaltyCard() {
         boolean loyaltyCard = basket2.getCustomerLoyaltyCard();
         assertEquals(false, loyaltyCard);
     }
@@ -77,6 +77,17 @@ public class BasketTest {
         basket.removeItemFromList(milk);
         int countItemList = basket.countItemsInItemList();
         assertEquals(2, countItemList);
+    }
+
+    @Test
+    public void testCanRemoveAllItems() {
+        ArrayList<Items> itemList = new ArrayList<Items>();
+        basket.addItemToList(milk);
+        basket.addItemToList(milk);
+        basket.addItemToList(bread);
+        basket.emptyAllItems();
+        int countItemList = basket.countItemsInItemList();
+        assertEquals(0, countItemList);
     }
 
 }

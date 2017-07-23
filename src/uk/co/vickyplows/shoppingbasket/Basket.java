@@ -11,6 +11,13 @@ public class Basket {
         this.customer = customer;
     }
 
+    public String getCustomerName() {
+        return this.customer.getName();
+    }
+
+    public boolean getCustomerLoyaltyCard() {
+        return this.customer.getLoyaltyCard();
+    }
 
     public int countItemsInItemList() {
         return itemList.size();
@@ -24,11 +31,7 @@ public class Basket {
         itemList.remove(item);
     }
 
-    public String getCustomerName() {
-        return this.customer.getName();
-    }
-
-    public boolean getCustomerLoyaltyCard() {
-        return this.customer.getLoyaltyCard();
+    public void emptyAllItems() {
+        itemList.clear();
     }
 }
