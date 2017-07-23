@@ -167,10 +167,14 @@ public class BasketTest {
         assertEquals( 0, twentyPlusDiscount, 0.01);
     }
 
-//    @Test
-//    public void testGetCustomerLoyaltyDiscountTotal() {
-//
-//    }
+    @Test
+    public void testGetCustomerLoyaltyDiscountTotal() {
+        basket.addItemToList(bread);
+        basket.addItemToList(bread);
+        basket.addItemToList(bread);
+        double customerLoyaltyDiscount = basket.getCustomerLoyaltyDiscountTotal();
+        assertEquals( 0.04, customerLoyaltyDiscount, 0.01);
+    }
 
 
 }

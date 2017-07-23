@@ -68,7 +68,7 @@ public class Basket {
         HashMap<String, Integer> bogofHashMap = new HashMap<String, Integer>();
 
         for (Items item : itemList) {
-            if (item.getBogofDiscount() == true) {
+            if (item.getBogofDiscount()) {
 
                 if (!bogofHashMap.containsKey(item.getName())) {
                     bogofHashMap.put(item.getName(), 1);
@@ -97,4 +97,19 @@ public class Basket {
 
         return twentyPlusDiscount;
     }
+
+    public double getCustomerLoyaltyDiscountTotal() {
+        double customerLoyaltyDiscount = 0;
+
+        currentValue = currentValue - (this.getBogofDiscount() + this.getTwentyPlusDiscountTotal());
+
+        if (customer.getLoyaltyCard()) {
+            customerLoyaltyDiscount = currentValue * 0.02;
+        } else {
+            customerLoyaltyDiscount = 0;
+        }
+
+        return customerLoyaltyDiscount;
+    }
+
 }
