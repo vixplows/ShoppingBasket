@@ -92,13 +92,13 @@ public class BasketTest {
         assertEquals( 1.55, itemPrice, 0.01);
     }
 
-//    @Test
-//    public void testCanCalculateBeforeDiscountValue() {
-//        basket.addItemToList(milk);
-//        basket.addItemToList(bread);
-//        double totalValue =
-//        assertEquals(2.55, totalValue, 0.01);
-//    }
+    @Test
+    public void testCanSumTotalItemsValuePreDiscounts() {
+        basket.addItemToList(milk);
+        basket.addItemToList(bread);
+        double totalValue = basket.sumItemPrices();
+        assertEquals(2.55, totalValue, 0.01);
+    }
 
 //    @Test
 //    public void testCanAddItemAndUpdateTotalValue() {

@@ -38,8 +38,13 @@ public class Basket {
     public double getItemPrice(Items item) {
         return item.getPrice();
     }
-//
-//    public double calculateBeforeDiscountValue() {
-//
-//    }
+
+    public double sumItemPrices() {
+        double sum = 0;
+        for (Items item : itemList) {
+            sum += item.getPrice();
+        }
+        return sum;
+    }
+
 }
