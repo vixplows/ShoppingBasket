@@ -23,6 +23,12 @@ public class BasketTest {
     }
 
     @Test
+    public void testGetCustomerName() {
+        String name = basket.getCustomerName();
+        assertEquals("Louise", name);
+    }
+
+    @Test
     public void testItemListStartsEmpty() {
         int countItemList = basket.countItemsInItemList();
         assertEquals(0, countItemList);

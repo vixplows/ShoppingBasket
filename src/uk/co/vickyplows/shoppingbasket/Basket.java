@@ -23,4 +23,8 @@ public class Basket {
     public void removeItemFromList(Items item) {
         itemList.remove(item);
     }
+
+    public String getCustomerName() {
+        return this.customer.getName();
+    }
 }
