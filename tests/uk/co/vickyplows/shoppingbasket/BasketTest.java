@@ -100,10 +100,29 @@ public class BasketTest {
         assertEquals(2.55, totalValue, 0.01);
     }
 
+    @Test
+    public void testCanCheckItemHasBogofTrue() {
+        basket.addItemToList(milk);
+        basket.addItemToList(bread);
+        boolean bogof = basket.checkItemBogof(bread);
+        assertEquals(true, bogof);
+    }
+
+    @Test
+    public void testCanCheckItemHasBogofFalse() {
+        basket.addItemToList(milk);
+        basket.addItemToList(bread);
+        boolean bogof = basket.checkItemBogof(milk);
+        assertEquals(false, bogof);
+    }
+
 //    @Test
-//    public void testCanAddItemAndUpdateTotalValue() {
-//        double currentValue = basket.addItemAndUpdateCurrentValue(milk);
-//        assertEquals(1.55, currentValue, 0.01);
+//    public void testCanApplyBogofDiscount() {
+//        basket.addItemToList(bread);
+//        basket.addItemToList(bread);
+//        double totalValueBogof = basket.sumItemPricesApplyBogof();
+//        assertEquals( 1.00, totalValueBogof, 0.01);
 //    }
+
 
 }

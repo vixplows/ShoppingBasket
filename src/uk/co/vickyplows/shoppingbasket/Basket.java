@@ -47,4 +47,11 @@ public class Basket {
         return sum;
     }
 
+    public boolean checkItemBogof(Items item) {
+        return item.getBogofDiscount();
+    }
+
+//    public double sumItemPricesApplyBogof() {
+//
+//    }
 }
