@@ -20,6 +20,12 @@ public class BreadTest {
         assertEquals("a002", productCode);
     }
 
-    
+    @Test
+    public void testSetProductCode() {
+        bread.setProductCode("b002");
+        String productCode = bread.getProductCode();
+        assertEquals("b002", productCode);
+    }
+
 
 }
