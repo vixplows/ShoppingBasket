@@ -66,4 +66,5 @@ public class MilkTest {
         boolean bogofDiscount = milk.getBogofDiscount();
         assertEquals(true, bogofDiscount);
     }
+
 }
