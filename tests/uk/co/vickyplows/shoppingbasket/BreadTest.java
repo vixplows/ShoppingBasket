@@ -27,5 +27,18 @@ public class BreadTest {
         assertEquals("b002", productCode);
     }
 
+    @Test
+    public void testGetName() {
+        String name = bread.getName();
+        assertEquals( "Bread", name);
+    }
+
+    @Test
+    public void testSetName() {
+        bread.setName("SourDough");
+        String name = bread.getName();
+        assertEquals("SourDough", name);
+    }
+
 
 }
