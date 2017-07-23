@@ -29,5 +29,17 @@ public class CustomerTest {
         assertEquals( "Raina", name);
     }
 
+    @Test
+    public void testHasLoyaltyCard() {
+        boolean loyaltyCard = customer.getLoyaltyCard();
+        assertEquals( true, loyaltyCard);
+    }
+    
+    @Test
+    public void testNoLoyaltyCard() {
+        boolean loyaltyCard = customer1.getLoyaltyCard();
+        assertEquals( false, loyaltyCard);
+    }
+
 
 }
