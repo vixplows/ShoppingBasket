@@ -34,11 +34,25 @@ public class CustomerTest {
         boolean loyaltyCard = customer.getLoyaltyCard();
         assertEquals( true, loyaltyCard);
     }
-    
+
     @Test
     public void testNoLoyaltyCard() {
         boolean loyaltyCard = customer1.getLoyaltyCard();
         assertEquals( false, loyaltyCard);
+    }
+
+    @Test
+    public void testSetLoyaltyCardTrue() {
+        customer1.setLoyaltyCard(true);
+        boolean loyaltyCard = customer1.getLoyaltyCard();
+        assertEquals( true, loyaltyCard);
+    }
+
+    @Test
+    public void testSetLoyaltyCardFalse() {
+        customer.setLoyaltyCard(false);
+        boolean loyaltyCard = customer.getLoyaltyCard();
+        assertEquals(false, loyaltyCard);
     }
 
 

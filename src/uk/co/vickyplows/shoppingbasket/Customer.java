@@ -22,4 +22,8 @@ public class Customer {
     public boolean getLoyaltyCard() {
         return loyaltyCard;
     }
+
+    public void setLoyaltyCard(boolean loyaltyCard) {
+        this.loyaltyCard = loyaltyCard;
+    }
 }
