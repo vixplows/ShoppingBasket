@@ -63,16 +63,27 @@ public class Basket {
         return item.getBogofDiscount();
     }
 
-//    public double sumItemPricesAndApplyBogof() {
-//        HashMap<String, Integer> counterHashMap = new HashMap<String, Integer>();
-//
-//        for (Items item : itemList) {
-//            if (!counterHashMap.containsKey(item.getName())) {
-//                counterHashMap.put(item.getName(), 1);
-//            } else
-//                counterHashMap.put(item.getName(), counterHashMap.get(item.getName()) + 1);
-//            }
-//        }
+    public double getBogofDiscount() {
 
+        double totalBogofDiscount = 0;
+
+        HashMap<String, Integer> bogofHashMap = new HashMap<String, Integer>();
+
+        for (Items item : itemList) {
+            if (item.getBogofDiscount() == true) {
+
+                if (!bogofHashMap.containsKey(item.getName())) {
+                    bogofHashMap.put(item.getName(), 1);
+
+                } else {
+                    bogofHashMap.put(item.getName(), bogofHashMap.get(item.getName()) + 1);
+                    if (bogofHashMap.get(item.getName()) % 2 == 0) {
+                        totalBogofDiscount += item.getPrice();
+                    }
+                }
+            }
+        }
+        return totalBogofDiscount;
+    }
 
 }

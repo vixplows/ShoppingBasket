@@ -128,14 +128,15 @@ public class BasketTest {
         double currentValue = basket.getCurrentValue();
         assertEquals(1.00, currentValue, 0.01);
     }
-//
-//    @Test
-//    public void testCanApplyBogofDiscount() {
-//        basket.addItemToList(bread);
-//        basket.addItemToList(bread);
-//        double totalValueBogof = basket.sumItemPricesAndApplyBogof();
-//        assertEquals( 1.00, totalValueBogof, 0.01);
-//    }
-//
+
+    @Test
+    public void testGetTotalBogofDiscount() {
+        basket.addItemToList(bread);
+        basket.addItemToList(bread);
+        basket.addItemToList(bread);
+        double totalBogofDiscount = basket.getBogofDiscount();
+        assertEquals( 1.00, totalBogofDiscount, 0.01);
+    }
+
 
 }
