@@ -84,7 +84,7 @@ public class Basket {
         return totalBogofDiscount;
     }
 
-    public double getTwentyPlusDiscount() {
+    public double getTwentyPlusDiscountTotal() {
         double twentyPlusDiscount = 0;
 
         currentValue = currentValue - this.getBogofDiscount();

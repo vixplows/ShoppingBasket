@@ -149,12 +149,12 @@ public class BasketTest {
     }
 
     @Test
-    public void testGetTwentyPlusDiscount() {
+    public void testGetTwentyPlusDiscountTotal() {
         bread = new Bread ("a002", "Bread", 12.00, true);
         basket.addItemToList(bread);
         basket.addItemToList(bread);
         basket.addItemToList(bread);
-        double twentyPlusDiscount = basket.getTwentyPlusDiscount();
+        double twentyPlusDiscount = basket.getTwentyPlusDiscountTotal();
         assertEquals(2.40, twentyPlusDiscount, 0.01);
     }
 
@@ -163,9 +163,14 @@ public class BasketTest {
         basket.addItemToList(bread);
         basket.addItemToList(bread);
         basket.addItemToList(bread);
-        double twentyPlusDiscount = basket.getTwentyPlusDiscount();
+        double twentyPlusDiscount = basket.getTwentyPlusDiscountTotal();
         assertEquals( 0, twentyPlusDiscount, 0.01);
     }
+
+//    @Test
+//    public void testGetCustomerLoyaltyDiscountTotal() {
+//
+//    }
 
 
 }
