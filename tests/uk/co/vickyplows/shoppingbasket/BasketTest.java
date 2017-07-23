@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class BasketTest {
 
     Basket basket;
-    Basket basket2;
+    Basket basket1;
     Customer customer;
     Customer customer1;
     Milk milk;
@@ -23,7 +23,7 @@ public class BasketTest {
         milk = new Milk("a001", "Milk", 1.55, false);
         bread = new Bread ("a002", "Bread", 1.00, true);
         basket = new Basket(customer);
-        basket2 = new Basket(customer1);
+        basket1 = new Basket(customer1);
     }
 
     @Test
@@ -40,7 +40,7 @@ public class BasketTest {
 
     @Test
     public void testsCheckCustomerNoLoyaltyCard() {
-        boolean loyaltyCard = basket2.getCustomerLoyaltyCard();
+        boolean loyaltyCard = basket1.getCustomerLoyaltyCard();
         assertEquals(false, loyaltyCard);
     }
 
@@ -159,7 +159,7 @@ public class BasketTest {
     }
 
     @Test
-    public void testNoTwentyPlusDiscount() {
+    public void testNoTwentyPlusDiscountApplied() {
         basket.addItemToList(bread);
         basket.addItemToList(bread);
         basket.addItemToList(bread);
@@ -176,5 +176,13 @@ public class BasketTest {
         assertEquals( 0.04, customerLoyaltyDiscount, 0.01);
     }
 
+    @Test
+    public void testNoCustomerLoyaltyDiscountApplied() {
+        basket1.addItemToList(bread);
+        basket1.addItemToList(bread);
+        basket1.addItemToList(bread);
+        double customerLoyaltyDiscount = basket1.getCustomerLoyaltyDiscountTotal();
+        assertEquals( 0, customerLoyaltyDiscount, 0.01);
+    }
 
 }

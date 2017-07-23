@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a472ec74-b1a6-4fb8-bd22-8689623124f8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Basket.java" afterPath="$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Basket.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BasketTest.java" afterPath="$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BasketTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="179" column="1" lean-forward="true" selection-start-line="179" selection-start-column="1" selection-end-line="179" selection-end-column="1" />
+            <state relative-caret-position="336">
+              <caret line="184" column="23" lean-forward="true" selection-start-line="184" selection-start-column="23" selection-end-line="184" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -80,8 +79,8 @@
         <option value="$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Items.java" />
         <option value="$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/MilkTest.java" />
         <option value="$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BreadTest.java" />
-        <option value="$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BasketTest.java" />
         <option value="$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Basket.java" />
+        <option value="$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BasketTest.java" />
       </list>
     </option>
   </component>
@@ -432,8 +431,8 @@
     <history-entry file="BasketTest - 2017.07.24 at 00h 41m 04s.xml">
       <configuration name="BasketTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_testGetTotalBogofDiscount - 2017.07.24 at 00h 02m 59s.xml">
-      <configuration name="BasketTest.testGetTotalBogofDiscount" configurationId="JUnit" />
+    <history-entry file="BasketTest - 2017.07.24 at 00h 43m 09s.xml">
+      <configuration name="BasketTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BasketTest_testGetTwentyPlusDiscount - 2017.07.24 at 00h 27m 17s.xml">
       <configuration name="BasketTest.testGetTwentyPlusDiscount" configurationId="JUnit" />
@@ -626,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BasketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="179" column="1" lean-forward="true" selection-start-line="179" selection-start-column="1" selection-end-line="179" selection-end-column="1" />
+        <state relative-caret-position="336">
+          <caret line="184" column="23" lean-forward="true" selection-start-line="184" selection-start-column="23" selection-end-line="184" selection-end-column="23" />
           <folding />
         </state>
       </provider>
