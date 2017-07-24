@@ -5,25 +5,20 @@ public class Customer {
     private String name;
     private boolean loyaltyCard;
 
-    public Customer(String name, boolean loyaltyCard) {
+    Customer(String name, boolean loyaltyCard) {
         this.name = name;
         this.loyaltyCard = loyaltyCard;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public String setName(String name) {
-        this.name = name;
-        return name;
-    }
-
-    public boolean getLoyaltyCard() {
+    boolean getLoyaltyCard() {
         return loyaltyCard;
     }
 
-    public void setLoyaltyCard(boolean loyaltyCard) {
+    void setLoyaltyCard(boolean loyaltyCard) {
         this.loyaltyCard = loyaltyCard;
     }
 }

@@ -23,13 +23,6 @@ public class CustomerTest {
     }
 
     @Test
-    public void testSetName() {
-        customer.setName("Raina");
-        String name = customer.getName();
-        assertEquals( "Raina", name);
-    }
-
-    @Test
     public void testHasLoyaltyCard() {
         boolean loyaltyCard = customer.getLoyaltyCard();
         assertEquals( true, loyaltyCard);
