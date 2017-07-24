@@ -9,47 +9,47 @@ public class Basket {
     private Customer customer;
     private double currentValue;
 
-    public Basket(Customer customer) {
+    Basket(Customer customer) {
         this.customer = customer;
         this.currentValue = 0;
     }
 
-    public String getCustomerName() {
+    String getCustomerName() {
         return this.customer.getName();
     }
 
-    public boolean getCustomerLoyaltyCard() {
+    boolean getCustomerLoyaltyCard() {
         return this.customer.getLoyaltyCard();
     }
 
-    public int countItemsInItemList() {
+    int countItemsInItemList() {
         return itemList.size();
     }
 
-    public double getCurrentValue() {
+    double getCurrentValue() {
         return currentValue;
     }
 
-    public void addItemToList(Items item) {
+    void addItemToList(Items item) {
         itemList.add(item);
         currentValue += item.getPrice();
     }
 
-    public void removeItemFromList(Items item) {
+    void removeItemFromList(Items item) {
         itemList.remove(item);
         currentValue -= item.getPrice();
     }
 
-    public void emptyAllItems() {
+    void emptyAllItems() {
         itemList.clear();
         currentValue = 0;
     }
 
-    public double getItemPrice(Items item) {
+    double getItemPrice(Items item) {
         return item.getPrice();
     }
 
-    public double sumItemPrices() {
+    double sumItemPrices() {
         double sum = 0;
         for (Items item : itemList) {
             sum += item.getPrice();
@@ -57,11 +57,11 @@ public class Basket {
         return sum;
     }
 
-    public boolean checkItemBogof(Items item) {
+    boolean checkItemBogof(Items item) {
         return item.getBogofDiscount();
     }
 
-    public double getBogofDiscountTotal() {
+    double getBogofDiscountTotal() {
 
         double totalBogofDiscount = 0;
 
@@ -84,7 +84,7 @@ public class Basket {
         return totalBogofDiscount;
     }
 
-    public double getTwentyPlusDiscountTotal() {
+    double getTwentyPlusDiscountTotal() {
         double twentyPlusDiscount = 0;
 
         currentValue = currentValue - this.getBogofDiscountTotal();
@@ -98,7 +98,7 @@ public class Basket {
         return twentyPlusDiscount;
     }
 
-    public double getCustomerLoyaltyDiscountTotal() {
+    double getCustomerLoyaltyDiscountTotal() {
         double customerLoyaltyDiscount = 0;
 
         currentValue = currentValue - (this.getBogofDiscountTotal() + this.getTwentyPlusDiscountTotal());
@@ -112,7 +112,7 @@ public class Basket {
         return customerLoyaltyDiscount;
     }
 
-    public double getTotalToPay() {
+    double getTotalToPay() {
        double totalToPay = 0;
 
        totalToPay = currentValue - this.getBogofDiscountTotal();

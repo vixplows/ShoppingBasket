@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a472ec74-b1a6-4fb8-bd22-8689623124f8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ShoppingBasket/uk/co/vickyplows/shoppingbasket/Items.class" afterPath="$PROJECT_DIR$/out/production/ShoppingBasket/uk/co/vickyplows/shoppingbasket/Items.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/ShoppingBasket/uk/co/vickyplows/shoppingbasket/BasketTest.class" afterPath="$PROJECT_DIR$/out/test/ShoppingBasket/uk/co/vickyplows/shoppingbasket/BasketTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Items.java" afterPath="$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Items.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BasketTest.java" afterPath="$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BasketTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Basket.java" afterPath="$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Basket.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,27 +24,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Basket.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Basket.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Basket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="119" column="72" lean-forward="true" selection-start-line="119" selection-start-column="72" selection-end-line="119" selection-end-column="72" />
+            <state relative-caret-position="233">
+              <caret line="114" column="4" lean-forward="false" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#173#180#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#621#622#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
                 <element signature="e#660#661#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-                <element signature="e#1082#1083#0" expanded="true" />
-                <element signature="e#1120#1121#0" expanded="true" />
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1386#1387#0" expanded="true" />
-                <element signature="e#1533#1550#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
+                <element signature="e#1263#1264#0" expanded="true" />
+                <element signature="e#1309#1310#0" expanded="true" />
+                <element signature="e#1449#1466#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Items.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Items.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Items.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -103,8 +99,8 @@
         <option value="$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/MilkTest.java" />
         <option value="$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BreadTest.java" />
         <option value="$PROJECT_DIR$/tests/uk/co/vickyplows/shoppingbasket/BasketTest.java" />
-        <option value="$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Basket.java" />
         <option value="$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Items.java" />
+        <option value="$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Basket.java" />
       </list>
     </option>
   </component>
@@ -196,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MilkTest">
+  <component name="RunManager" selected="JUnit.BasketTest">
     <configuration name="BasketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -412,9 +408,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MilkTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BreadTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MilkTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BreadTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.testGetTwentyPlusDiscountTotal" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest.testNoTwentyPlusDiscount" />
       </list>
@@ -434,9 +430,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BasketTest - 2017.07.24 at 00h 53m 11s.xml">
-      <configuration name="BasketTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BasketTest - 2017.07.24 at 00h 53m 31s.xml">
       <configuration name="BasketTest" configurationId="JUnit" />
     </history-entry>
@@ -456,6 +449,9 @@
       <configuration name="BasketTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BasketTest - 2017.07.24 at 01h 10m 57s.xml">
+      <configuration name="BasketTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest - 2017.07.24 at 01h 14m 26s.xml">
       <configuration name="BasketTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BreadTest - 2017.07.24 at 01h 12m 35s.xml">
@@ -597,30 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Basket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="119" column="72" lean-forward="true" selection-start-line="119" selection-start-column="72" selection-end-line="119" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#173#180#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1340#1341#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1533#1550#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Bread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -631,9 +603,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Items.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/co/vickyplows/shoppingbasket/Basket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="114" column="4" lean-forward="false" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#173#180#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1449#1466#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
