@@ -61,7 +61,7 @@ public class Basket {
         return item.getBogofDiscount();
     }
 
-    public double getBogofDiscount() {
+    public double getBogofDiscountTotal() {
 
         double totalBogofDiscount = 0;
 
@@ -87,7 +87,7 @@ public class Basket {
     public double getTwentyPlusDiscountTotal() {
         double twentyPlusDiscount = 0;
 
-        currentValue = currentValue - this.getBogofDiscount();
+        currentValue = currentValue - this.getBogofDiscountTotal();
 
         if (currentValue > 20.00) {
             twentyPlusDiscount = currentValue * 0.1;
@@ -101,7 +101,7 @@ public class Basket {
     public double getCustomerLoyaltyDiscountTotal() {
         double customerLoyaltyDiscount = 0;
 
-        currentValue = currentValue - (this.getBogofDiscount() + this.getTwentyPlusDiscountTotal());
+        currentValue = currentValue - (this.getBogofDiscountTotal() + this.getTwentyPlusDiscountTotal());
 
         if (customer.getLoyaltyCard()) {
             customerLoyaltyDiscount = currentValue * 0.02;
@@ -112,4 +112,13 @@ public class Basket {
         return customerLoyaltyDiscount;
     }
 
+    public double getTotalToPay() {
+       double totalToPay = 0;
+
+       totalToPay = currentValue - this.getBogofDiscountTotal();
+       totalToPay = totalToPay - this.getTwentyPlusDiscountTotal();
+       totalToPay = totalToPay - this.getCustomerLoyaltyDiscountTotal();
+
+       return totalToPay;
+    }
 }
