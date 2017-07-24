@@ -195,14 +195,15 @@ public class BasketTest {
         assertEquals(21.60, totalToPay, 0.01);
     }
 
-//    @Test
-//    public void testCalculateTotalToPayWithLoyaltyCard() {
-//        bread = new Bread ("a002", "Bread", 12.00, true);
-//        basket.addItemToList(bread);
-//        basket.addItemToList(bread);
-//        basket.addItemToList(bread);
-//        double totalToPay = basket.getTotalToPay();
-//        assertEquals(21.17, totalToPay, 0.01);
-//    }
+    // failing test - returning 21.36.
+    @Test
+    public void testCalculateTotalToPayWithLoyaltyCard() {
+        bread = new Bread ("a002", "Bread", 12.00, true);
+        basket.addItemToList(bread);
+        basket.addItemToList(bread);
+        basket.addItemToList(bread);
+        double totalToPay = basket.getTotalToPay();
+        assertEquals(21.17, totalToPay, 0.01);
+    }
 
 }
